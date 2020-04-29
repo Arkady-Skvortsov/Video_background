@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Video Background</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="video.css" />
+</head>
+<body>
+    <section class="showcase">
+    	<div class="video_container">
+    		<video src="Video/Background_video.mp4" muted autoplay loop></video>
+    	</div>
+    	<div class="text_container">
+    		<img src="img/BF_logo.png" alt="Battlefield_1" />
+    	</div>
+    </section>
+
+    <script>
+    	let text_c = document.querySelector('.text_container');
+    	let vid_c = document.querySelector('.video_container');
+
+    	text_c.addEventListener('click', () => {
+           vid_c.classList.add('down');
+    	}); 
+    </script>
+</body>
+</html>
